@@ -29,11 +29,11 @@ RUN sudo apt-get install -y nodejs
 RUN sudo curl -o- -L https://yarnpkg.com/install.sh | bash
 
 #Install ts-node
-RUN npm install -g typescript
-RUN npm install -g ts-node
+RUN sudo npm install -g typescript
+RUN sudo npm install -g ts-node
 
 #install solana
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.10.32/install)"
+RUN sudo sh -c "$(curl -sSfL https://release.solana.com/v1.10.32/install)"
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
